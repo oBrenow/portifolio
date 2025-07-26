@@ -16,7 +16,6 @@ body{
 .interface{
     max-width: 1700px;
     margin: 0 auto;
-
 }
 
 .flex{
@@ -145,6 +144,7 @@ section.topo-do-site .flex{
 
 section.especialidades{
     padding: 40px 4%;
+    background-color: #0c0c0c;
 }
 
 section.especialidades .flex{
@@ -181,6 +181,7 @@ section.especialidades .flex{
 section.sobre {
     padding: 40px 4%;
     text-align: start;
+    
 }
 
 section.sobre .flex{
@@ -234,3 +235,52 @@ section.sobre .flex{
     margin: 20px 60px;
     transition: .2s;
 }
+
+/*PORTIFOLIO */
+
+section.projetos{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #333333;
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+}
+
+.img-port{
+    margin-top: 50px;
+    width: 360px;
+    height: 460px;
+    background-color: rgb(52, 52, 252);
+    border-radius: 30px;
+}
+
+
+.loading {
+    display: flex;
+    justify-content: center;
+    padding: 230px 4%; 
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s; 
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s; 
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
